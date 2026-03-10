@@ -1,3 +1,10 @@
+@import "tailwindcss";
+
+
+.feature-card {
+  @apply flex flex-col items-center justify-center;
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -26,8 +33,10 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  @apply min-h-screen min-w-screen
+}
+#root {
+  @apply min-h-screen min-w-screen flex flex-col items-center justify-center
 }
 
 h1 {
